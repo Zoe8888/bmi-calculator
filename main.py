@@ -19,10 +19,10 @@ entry_weight = tkinter.Entry(frame).place(relx=0.5, rely=0)
 label_height = tkinter.Label(frame, text="Height (cm) : ").place(relx=0, rely=0.1)
 entry_height = tkinter.Entry(frame).place(relx=0.5, rely=0.1)
 
-label_gender = tkinter.Label(frame, text="Gender :").place(relx=0, rely=0.2)
+label_gender = tkinter.Label(frame, text="Gender :").place(relx=0, rely=0.3)
 
-label_age = tkinter.Label(frame, text="Age").place(relx=0, rely=0.3)
-entry_age = tkinter.Entry(frame).place(relx=0.5, rely=0.3)
+label_age = tkinter.Label(frame, text="Age").place(relx=0, rely=0.2)
+entry_age = tkinter.Entry(frame).place(relx=0.5, rely=0.2)
 
 
 def activate(value):
@@ -36,8 +36,7 @@ options = ["Select..", "Male", "Female"]
 variable = StringVar(frame)
 variable.set(options[0])
 gender_menu = OptionMenu(frame, variable, *options, command=activate)
-gender_menu.place()
-gender_menu = OptionMenu(frame, variable, *options, command=activate).place(relx=0.2, rely=0.2)
+gender_menu.place(relx=0.5, rely=0.3)
 
 
 def calculate_ideal_bmi():
