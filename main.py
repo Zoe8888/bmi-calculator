@@ -8,7 +8,7 @@ root.title("BMI Calculator")
 root.geometry("700x500")
 
 header = Label(root, text="Ideal Body Mass Index Calculator")
-header.place(relx=0, rely=0)
+header.place(relx=0.2, rely=0)
 
 frame = Frame(root, width=500, height=200, borderwidth=1, relief="ridge")
 frame.place(relx=0.1, rely=0.1)
