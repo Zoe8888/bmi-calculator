@@ -129,7 +129,7 @@ entry_ideal_BMI.place(relx=0.4, rely=0.7)
 # It informs the user the state of their weight (eg. overweight, underweight, etc)
 label_analysis = Label(root, text="Category", bg="#47d16c")
 label_analysis.place(relx=0.2, rely=0.8)
-analysis = Label(root, width="30")
+analysis = Label(root, width="20")
 analysis.place(relx=0.4, rely=0.8)
 
 # Creating & positioning the clear button
